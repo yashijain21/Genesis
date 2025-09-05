@@ -10,7 +10,7 @@ import {
 import vdo1 from "../assets/herovdo1.mp4";
 import vdo2 from "../assets/Creative.mp4";
 import Create from "../assets/Create.png";
-import ELEVATE from "../assets/ELEVATE.png";
+import ELEVATE from "../assets/Elevate.png";
 import Influence from "../assets/Influence.png";
 import Design from "../assets/Design.png";
 import Market from "../assets/Market.png";
