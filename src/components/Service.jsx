@@ -5,7 +5,7 @@ import vdo1 from "../assets/Design.mp4";
 import vdo2 from "../assets/Development.mp4";
 import vdo3 from "../assets/Digital Mar.mp4";
 import vdo4 from "../assets/it.mp4";
-import vdo5 from "../assets/Devops.mp4";
+import vdo5 from "../assets/devops.mp4";
 const services = [
   {
     id: 1,
