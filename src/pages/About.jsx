@@ -1,31 +1,32 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Hearder";
 import Footer from "../components/Footer";
+import CultureCode from "../components/Culturecode.jsx";
 export default function About() {
-  const [scale, setScale] = useState(1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      // shrink effect (minimum scale = 0.4)
-      const newScale = Math.max(0.4, 1 - scrollY / 600);
-      setScale(newScale);
-    };
-
+const [scale, setScale] = useState(1);
+useEffect(() => { 
+  const handleScroll = () => { const scrollY = window.scrollY; 
+    // shrink effect (minimum scale = 0.4)
+     const newScale = Math.max(0.4, 1 - scrollY / 600);
+     setScale(newScale); };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+     return () => window.removeEventListener("scroll", handleScroll); }, 
+     [])
 
+     
   return (
   <>
   <Header/>
     <section className="bg-white text-gray-900 py-16 roboto-condensed">
       {/* Top Content */}
       <div className="text-center   mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-         GENESIS VIRTUE ✦ GENESIS VIRTUE ✦GENESIS VIRTUE
-        </h1>
-        <p className="text-2xl leading-relaxed text-gray-700 max-w-3xl mx-auto">
+      <h1 className="relative overflow-hidden whitespace-nowrap text-4xl md:text-5xl font-bold mb-6">
+  <span className="animate-marquee inline-block text-[104px]">
+    GENESIS VIRTUE ✦ GENESIS VIRTUE ✦ GENESIS VIRTUE ✦ GENESIS VIRTUE ✦
+  </span>
+</h1>
+
+        <p className="text-[40px] leading-relaxed text-gray-700 max-w-4xl mx-auto roboto-condensed">
           Genesis Virtue Isn’t Just A Name—It’s A Promise. In Ancient Philosophy,
           “Virtue” Meant Excellence With Purpose. Today, We Shape Digital
           Experiences That Feel Genuine, Guided By Clarity, Creativity, And
@@ -33,7 +34,7 @@ export default function About() {
         </p>
         <a
           href="#about-genesis"
-          className="mt-6 inline-block text-sm font-semibold text-gray-800 underline"
+          className="mt-6 inline-block text-[24px] font-semibold text-gray-800 underline"
         >
           Learn More About Our Company
         </a>
@@ -95,6 +96,7 @@ export default function About() {
         </div>
       </div>
     </section>
+    <CultureCode/>
    <Footer/> 
   </>
   );

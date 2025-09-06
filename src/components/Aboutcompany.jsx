@@ -23,6 +23,7 @@ export default function AboutCompany() {
           <p className="mt-3 text-sm tracking-wide font-semibold">
             GENESIS VIRTUE STUDIO
           </p>
+          
           <p className="text-xs text-gray-500">Genesis Virtue ,Noida</p>
         </div>
 

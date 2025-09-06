@@ -6,8 +6,8 @@ import workspace1 from "../assets/workspace1.jpg";
 import workspace2 from "../assets/workspace2.jpg";
 import workspace3 from "../assets/workspace3.jpg";
 import career from "../assets/career.png";
-import Header from "../components/Hearder";
-import Footer from "../components/Footer";
+import Header from "./Hearder";
+import Footer from "./Footer";
 // Card Data
 const cultureCodes = [
   { id: 1, title: " DESIGN WITH PURPOSE", desc: "We Don’t Chase Trends—We Design With Intention And Clarity." },
@@ -37,7 +37,7 @@ export default function CultureCode() {
 
   return (
     <>
-    <Header />
+
     <section className="relative min-h-screen bg-white text-black flex flex-col justify-center items-center overflow-hidden">
       
       {/* Instruction with arrow */}
@@ -203,7 +203,7 @@ export default function CultureCode() {
           <img src={career} alt="Life at Genesis Virtue" className="rounded-lg shadow-md grayscale" />
         </div>
       </section>
-      <Footer />
+    
     </>
   );
 }

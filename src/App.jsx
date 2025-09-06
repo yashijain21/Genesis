@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About.jsx";
-import CultureCode from "./pages/Culturecode.jsx";
-import Home from "./pages/Home.jsx";
 
+import Home from "./pages/Home.jsx";
+import Work from "./pages/Work.jsx";
 function App() {
   return (
     <Router>
@@ -12,7 +12,8 @@ function App() {
 
         {/* Route for About */}
         <Route path="/about" element={<About />} />
-        <Route path="/Culture" element={<CultureCode/>} />
+        <Route path="/work" element={<Work />} />
+     
       </Routes>
     </Router>
   );

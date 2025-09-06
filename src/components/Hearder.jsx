@@ -16,8 +16,7 @@ export default function Header() {
         {/* Navigation */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-black">
           <a href="/about" className="hover:text-gray-700">About Us</a>
-          <a href="/culture" className="hover:text-gray-700">What We Do</a>
-          <a href="#our-work" className="hover:text-gray-700">Our Work</a>
+          <a href="/work" className="hover:text-gray-700">Our Work</a>
           <a href="#career" className="hover:text-gray-700">Career</a>
           <a href="#contact" className="hover:text-gray-700">Contact Us</a>
         </nav>
