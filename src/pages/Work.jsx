@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import Header from "../components/hearder";
+import Footer from "../components/footer";
 export default function OurWorkScroll() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.3 });
@@ -13,6 +14,9 @@ export default function OurWorkScroll() {
   }, [inView, controls]);
 
   return (
+    
+  <>
+  <Header />
     <section
       ref={ref}
       className="relative w-full min-h-screen overflow-hidden"
@@ -96,5 +100,7 @@ export default function OurWorkScroll() {
         </motion.div>
       </motion.div>
     </section>
+    <Footer />
+  </>
   );
 }
