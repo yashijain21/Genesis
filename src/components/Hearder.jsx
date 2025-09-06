@@ -1,6 +1,6 @@
 import React from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="w-full bg-gray-200 shadow-sm">
@@ -14,12 +14,25 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-6 text-sm font-medium text-black">
-          <a href="/about" className="hover:text-gray-700">About Us</a>
-          <a href="/work" className="hover:text-gray-700">Our Work</a>
-          <a href="#career" className="hover:text-gray-700">Career</a>
-          <a href="#contact" className="hover:text-gray-700">Contact Us</a>
-        </nav>
+
+
+<nav className="hidden md:flex space-x-6 text-sm font-medium text-black">
+  <Link to="/about" className="hover:text-gray-700">
+    About Us
+  </Link>
+
+  <Link to="/work" className="hover:text-gray-700">
+    Our Work
+  </Link>
+
+  <Link to="/career" className="hover:text-gray-700">
+    Career
+  </Link>
+
+  <Link to="/contact" className="hover:text-gray-700">
+    Contact Us
+  </Link>
+</nav>
 
         {/* Actions */}
         <div className="flex items-center space-x-3">
