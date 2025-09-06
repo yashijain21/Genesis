@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Header from "../components/hearder";
-import Footer from "../components/footer";
+import Header from "../components/Hearder";
+import Footer from "../components/Footer";
 export default function OurWorkScroll() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.3 });
